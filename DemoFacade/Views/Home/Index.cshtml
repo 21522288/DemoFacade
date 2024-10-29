@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Upload File</h2>
+
+<!-- Form Upload -->
+<form asp-action="UploadFile" method="post" enctype="multipart/form-data" id="uploadForm">
+    <div>
+        <!-- Nút "Tải lên" để mở cửa sổ chọn file -->
+        <label for="file">Chọn file:</label>
+        <input type="file" id="file" name="file" style="display:none;" onchange="document.getElementById('uploadForm').submit()" />
+        <button type="button" onclick="document.getElementById('file').click()">Tải lên</button>
+    </div>
+</form>
+
+<!-- Hiển thị URL sau khi upload thành công -->
+@if (ViewBag.FileUrl != null)
+{
+        <div>
+            <p>Uploaded URL: <a href="@ViewBag.FileUrl" target="_blank">@ViewBag.FileUrl</a></p>
+        </div>
+}
