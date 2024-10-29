@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DemoFacade")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c9bc243a7b6aedef7b45d3c334ca280b170387d")]
 [assembly: System.Reflection.AssemblyProductAttribute("DemoFacade")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DemoFacade")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
